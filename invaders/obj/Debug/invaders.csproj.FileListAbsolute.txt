@@ -1,0 +1,10 @@
+c:\users\hp\documents\visual studio 2017\Projects\invaders\invaders\bin\Debug\invaders.exe.config
+c:\users\hp\documents\visual studio 2017\Projects\invaders\invaders\bin\Debug\invaders.exe
+c:\users\hp\documents\visual studio 2017\Projects\invaders\invaders\bin\Debug\invaders.pdb
+c:\users\hp\documents\visual studio 2017\Projects\invaders\invaders\obj\Debug\invaders.csprojResolveAssemblyReference.cache
+c:\users\hp\documents\visual studio 2017\Projects\invaders\invaders\obj\Debug\invaders.Properties.Resources.resources
+c:\users\hp\documents\visual studio 2017\Projects\invaders\invaders\obj\Debug\invaders.csproj.GenerateResource.Cache
+c:\users\hp\documents\visual studio 2017\Projects\invaders\invaders\obj\Debug\invaders.exe
+c:\users\hp\documents\visual studio 2017\Projects\invaders\invaders\obj\Debug\invaders.pdb
+c:\users\hp\documents\visual studio 2017\Projects\invaders\invaders\obj\Debug\invaders.Form1.resources
+c:\users\hp\documents\visual studio 2017\Projects\invaders\invaders\obj\Debug\invaders.invaders.resources
