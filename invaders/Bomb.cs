@@ -9,15 +9,29 @@ using System.Windows.Forms;
 
 namespace invaders
 {
-    class Circle
+     public class Bomb
     {
         Form form;
         public int currentx = 0;
-        public  int currenty = 0;
-        public Circle(Form form)
+        public int velocity = 1;
+        private int currenty = 0;
+        public int Currenty
+        {
+            get
+            {
+                return currenty;
+            }
+            set
+            {
+                currenty = value;
+                form.Refresh();
+            }
+        }
+        public Bomb(Form form)
         {
             this.form = form;
             this.form.Paint += Form_Paint;
+            form.Refresh();
             //Debugger.Break();
         }
 
@@ -28,9 +42,10 @@ namespace invaders
 
         public void Draw(Graphics g)
         { 
-            Rectangle rectangle = new Rectangle(currentx, currenty, 50, 50);
+            Rectangle rectangle = new Rectangle(currentx, currenty, 10, 10);
          
             g.DrawEllipse(System.Drawing.Pens.Black, rectangle);
+            g.FillEllipse(Brushes.Aqua, rectangle);
         }
     }
 }
