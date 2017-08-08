@@ -14,7 +14,6 @@ namespace invaders
         Form form;
         public int currentx = 0;
         public  int currenty = 0;
-        public Graphics g;
         public Circle(Form form)
         {
             this.form = form;

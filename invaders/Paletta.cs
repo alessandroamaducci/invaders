@@ -15,7 +15,6 @@ namespace invaders
         public Form form1;
         public int currentx = 0;
         public  int currenty = 0;
-        public Graphics g;
         public Paletta(Form f)
         {
             form1 = f;

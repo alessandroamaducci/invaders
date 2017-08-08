@@ -14,7 +14,6 @@ namespace invaders
         [STAThread]
         static void Main()
         {
-            Circle pippo = new Circle();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new invaders());
