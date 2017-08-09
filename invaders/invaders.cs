@@ -12,13 +12,12 @@ namespace invaders
 {
     public partial class invaders : Form
     {
-        Paletta paletta;
         BombsManager bombsmanager;
         public invaders()
         {
             InitializeComponent();
             bombsmanager = new BombsManager(this);
-            paletta = new Paletta(this);
+            
         }
     }
 }

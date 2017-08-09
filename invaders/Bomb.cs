@@ -12,9 +12,10 @@ namespace invaders
      public class Bomb
     {
         Form form;
+        public int size = 10;
         public int currentx = 0;
         public int velocity = 1;
-        private int currenty = 0;
+        public int currenty = 0;
         public int Currenty
         {
             get
@@ -42,7 +43,7 @@ namespace invaders
 
         public void Draw(Graphics g)
         { 
-            Rectangle rectangle = new Rectangle(currentx, currenty, 10, 10);
+            Rectangle rectangle = new Rectangle(currentx, currenty, size, size);
          
             g.DrawEllipse(System.Drawing.Pens.Black, rectangle);
             g.FillEllipse(Brushes.Aqua, rectangle);

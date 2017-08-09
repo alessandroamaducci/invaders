@@ -11,14 +11,16 @@ namespace invaders
 {
     class Paletta
     {
-        int palettaweight = 25;
+
         public Form form1;
         public int currentx = 0;
         public  int currenty = 0;
+        public int height = 25;
+        public int width = 100;
         public Paletta(Form f)
         {
             form1 = f;
-            currenty = form1.ClientSize.Height - palettaweight;
+            currenty = form1.ClientSize.Height - height;
             form1.KeyDown += Form1_KeyDown;
             form1.Paint += Form1_Paint;
             form1.Refresh();
@@ -33,7 +35,7 @@ namespace invaders
         {
             if (e.KeyCode == System.Windows.Forms.Keys.Left)
             {
-                currentx = currentx - 1;
+                currentx = currentx - 7;
                 form1.Refresh();
 
             }
@@ -47,7 +49,7 @@ namespace invaders
 
         public void Draw(Graphics g)
         { 
-            Rectangle rectangle = new Rectangle(currentx, currenty,50 , palettaweight);
+            Rectangle rectangle = new Rectangle(currentx, currenty, width , height);
             SolidBrush bluebrush = new SolidBrush(Color.Blue);
             g.FillRectangle(bluebrush, rectangle);
         }
